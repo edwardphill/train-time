@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Firebase Training</title>
+    <title>Firebase 'Train'-ing: Train Schedule</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="repo-assets/css/style.css" />
   </head>
   <body>
     <div class="container">
@@ -18,9 +19,103 @@
         <div class="container">
           <h1 class="display-4">Train Time!</h1>
           <p class="lead">
-            This app uses Bootstrap, jQuery, and Firebase to create a demo train
-            station schedule.
+            This app uses Bootstrap, jQuery, and Firebase to create a demo NYC
+            Subway station schedule.
           </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          Current Train Schedule
+        </div>
+        <div class="card-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency (minutes)</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>7th Avenue Local</td>
+                <td>6:00</td>
+                <td>5:00</td>
+                <td>4:00</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Flatbush Avenue-Brooklyn College</td>
+                <td>12:00</td>
+                <td>7:00</td>
+                <td>5:00</td>
+              </tr>
+              <tr>
+                <th scope="row">L</th>
+                <td>Canasirse</td>
+                <td>20:00</td>
+                <td>7:00</td>
+                <td>13:00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <h5 class="card-header">Add A Train</h5>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Train Name</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter Train Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Destination</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Destination"
+                />
+
+                <div class="form-group">
+                  <label for="exampleInputEmail1"
+                    >First Train Time (Military Time HH:MM)</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Frequency"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Frequency</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Frequency"
+                  />
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
