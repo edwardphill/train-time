@@ -38,8 +38,8 @@
       <div class="jumbotron jumbotron-fluid">
         <h1 class="display-4">Train Time!</h1>
         <p class="lead">
-          This app uses Bootstrap, jQuery, Moment.js, and Firebase to create a
-          demo Subway station schedule.
+          This app uses Bootstrap, jQuery, and Moment.js, and Firebase to create
+          a demo Subway station schedule.
         </p>
       </div>
 
@@ -60,29 +60,7 @@
                 <th scope="col">Minutes Away</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>7th Avenue Local</td>
-                <td>6:00</td>
-                <td>5:00</td>
-                <td>4:00</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Flatbush Avenue-Brooklyn College</td>
-                <td>12:00</td>
-                <td>7:00</td>
-                <td>5:00</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Canasirse</td>
-                <td>20:00</td>
-                <td>7:00</td>
-                <td>13:00</td>
-              </tr>
-            </tbody>
+            <tbody></tbody>
           </table>
         </div>
       </div>
@@ -94,12 +72,11 @@
           <!-- Entry Form -->
           <form>
             <div class="form-group">
-              <label for="exampleInputEmail1">Train Name</label>
+              <label for="train-info">Train Name</label>
               <input
                 type="text"
                 class="form-control"
                 id="lineName"
-                aria-describedby="emailHelp"
                 placeholder="Enter Train Name"
               />
             </div>
@@ -113,19 +90,18 @@
               />
 
               <div class="form-group">
-                <label for="exampleInputEmail1"
+                <label for="train-info-time"
                   >First Train Time (Military Time HH:MM)</label
                 >
                 <input
                   type="time"
                   class="form-control"
                   id="trainTimes"
-                  aria-describedby="emailHelp"
-                  placeholder="Frequency"
+                  placeholder="First train time"
                 />
               </div>
               <div class="form-group">
-                <label for="exampleInputEmail1">Frequency</label>
+                <label for="train-info">Frequency</label>
                 <input
                   type="number"
                   class="form-control"
