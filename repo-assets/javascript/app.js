@@ -54,10 +54,13 @@ $("#add-train-btn").on("click", function(event) {
   database.ref().push(newTrain);
 
   // Logs everything to console
+
+  /*
   console.log(newTrain.newName);
   console.log(newTrain.newDestination);
   console.log(newTrain.newTime);
   console.log(newTrain.freq);
+  */
 
   alert("Train successfully added");
 
@@ -95,9 +98,6 @@ database.ref().on("child_added", function(childSnapshot) {
   // Calculate the total billed rate
 
   // Create the new row
-
-  // Append the new row to the table
-
   var newRow = $("<tr>").append(
     $("<td>").text(newName),
     $("<td>").text(newDestination),
@@ -105,8 +105,10 @@ database.ref().on("child_added", function(childSnapshot) {
     $("<td>").text(freq)
   );
 
+  // Append the new row to the table
   $("#train-table > tbody").append(newRow);
 });
+
 // Example Time Math
 // -----------------------------------------------------------------------------
 // Assume Employee start date of January 1, 2015
