@@ -1,6 +1,5 @@
 * {
-    background-color: black;
-    max-width: auto;
+    font-family: Helvetica, sans-serif;
 }
 
 h1, h2 {
@@ -30,8 +29,6 @@ h1, h2 {
     font-family: Helvetica, sans-serif;
 }
 
-.card {}
-
 th {
     color: white;
     font-family: Helvetica, sans-serif;
@@ -54,9 +51,4 @@ td {
     display: flex;
     text-align: center;
     cursor: pointer;
-}
-
-.container {
-    margin: auto;
-    background-color: black;
 }
